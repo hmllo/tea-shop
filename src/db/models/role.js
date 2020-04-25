@@ -2,13 +2,13 @@
 module.exports = (sequelize, DataTypes) => {
   const role = sequelize.define('role', {
     name: DataTypes.STRING,
-    cname: DataTypes.STRING,
     description: DataTypes.STRING,
     status: DataTypes.INTEGER,
     delete: DataTypes.INTEGER
   }, {});
   role.associate = function(models) {
-    // associations can be defined here
+    role.hasOne(models.role_power);
+    role.hasOne(models.account); 
   };
   return role;
 };

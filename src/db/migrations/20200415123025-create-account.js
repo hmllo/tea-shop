@@ -8,24 +8,26 @@ module.exports = {
                 primaryKey: true,
                 type: Sequelize.INTEGER
             },
-            nickname: {
-                type: Sequelize.STRING
+            username: {
+                allowNull: false,
+                type: Sequelize.STRING(11)
             },
             password: {
+                allowNull: false,
                 type: Sequelize.STRING
             },
             name: {
-                type: Sequelize.STRING
+                type: Sequelize.STRING(11)
             },
             phone: {
-                type: Sequelize.INTEGER
+                type: Sequelize.STRING(11)
             },
             status: {
                 defaultValue: 1,
-                type: Sequelize.INTEGER
+                type: Sequelize.INTEGER(1).UNSIGNED
             },
-            role_id: {
-                type: Sequelize.INTEGER
+            roleId: {
+                type: Sequelize.INTEGER(11)
             },
             createdAt: {
                 allowNull: false,
