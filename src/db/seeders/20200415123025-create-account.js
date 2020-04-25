@@ -20,9 +20,9 @@ module.exports = {
             },
             {
                 id: 2,
-                username: "yangyang",
+                username: "admin2",
                 password: sha256Password,
-                name: "杨洋",
+                name: "admin2",
                 phone: 13222222222,
                 status: 1,
                 roleId: 1,

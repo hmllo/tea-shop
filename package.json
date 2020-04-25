@@ -1,14 +1,13 @@
 {
   "name": "tea-shop",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "node express mysql sequelize 后台api 登录 权限",
   "scripts": {
     "start": "nodemon ./src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["node", "express", "mysql", "sequelize", "后台api", "登录", "权限"],
+  "author": "yy",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
